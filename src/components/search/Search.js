@@ -24,8 +24,10 @@ class Search extends Component {
 		});
 	};
 
+	onAmountChange = (e, index, value) => this.setState({ amount: value });
+
 	render() {
-		console.log(this.state);
+		console.log(this.state.images);
 		return (
 			<div>
 				<TextField
