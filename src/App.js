@@ -3,11 +3,15 @@ import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
 
 import "./App.css";
 import NavBar from "./components/navbar/NavBar";
+import Search from "./components/search/Search";
 
 function App() {
 	return (
 		<MuiThemeProvider>
-			<NavBar />
+			<div>
+				<NavBar />
+				<Search />
+			</div>
 		</MuiThemeProvider>
 	);
 }
