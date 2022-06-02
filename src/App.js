@@ -1,12 +1,15 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
+
+import "./App.css";
+import NavBar from "./components/navbar/NavBar";
 
 function App() {
-  return (
-    <div className="App">
-     Hello
-    </div>
-  );
+	return (
+		<MuiThemeProvider>
+			<NavBar />
+		</MuiThemeProvider>
+	);
 }
 
 export default App;
